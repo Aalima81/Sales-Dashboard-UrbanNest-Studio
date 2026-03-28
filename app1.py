@@ -43,7 +43,7 @@ with col2:
     st.markdown("<h1 style='color:#00FFAA;'>📊 UrbanNest Studio Sales Dashboard</h1>", unsafe_allow_html=True)
 
 # Load data
-df = pd.read_csv("C:/Users/AALIMA/Documents/M.Tech_BigData/sales.csv")
+df = pd.read_csv("sales.csv")
 
 # Fix date
 df["Order Date"] = pd.to_datetime(df["Order Date"], dayfirst=True)
