@@ -169,9 +169,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 #Add Chatbot Code
+import os
 from groq import Groq
 
-client = Groq(api_key="gsk_xxxx")
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 # Initialize memory
 if "messages" not in st.session_state:
