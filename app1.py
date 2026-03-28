@@ -49,7 +49,7 @@ df = pd.read_csv("sales.csv")
 df["Order Date"] = pd.to_datetime(df["Order Date"], dayfirst=True)
 
 # Sidebar Filters
-st.sidebar.image("logo.png", width=120)
+st.sidebar.image("Logo.png", width=120)
 st.sidebar.title("🔍 Filters")
 st.sidebar.title("📊 Navigation")
 
